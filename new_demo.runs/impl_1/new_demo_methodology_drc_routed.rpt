@@ -1,0 +1,212 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Wed Nov 28 12:47:48 2018
+| Host         : VMware running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_methodology -file new_demo_methodology_drc_routed.rpt -pb new_demo_methodology_drc_routed.pb -rpx new_demo_methodology_drc_routed.rpx
+| Design       : new_demo
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 35
++-----------+----------+-------------------------------------------+------------+
+| Rule      | Severity | Description                               | Violations |
++-----------+----------+-------------------------------------------+------------+
+| TIMING-14 | Warning  | LUT on the clock tree                     | 2          |
+| TIMING-20 | Warning  | Non-clocked latch                         | 32         |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin | 1          |
++-----------+----------+-------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT clock/n0_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#2 Warning
+LUT on the clock tree  
+The LUT selected_5MHZ_BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch num0_reg[0] cannot be properly analyzed as its control pin num0_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch num0_reg[1] cannot be properly analyzed as its control pin num0_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch num0_reg[2] cannot be properly analyzed as its control pin num0_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch num0_reg[3] cannot be properly analyzed as its control pin num0_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch num1_reg[0] cannot be properly analyzed as its control pin num1_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch num1_reg[1] cannot be properly analyzed as its control pin num1_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch num1_reg[2] cannot be properly analyzed as its control pin num1_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch num1_reg[3] cannot be properly analyzed as its control pin num1_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch num2_reg[0] cannot be properly analyzed as its control pin num2_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch num2_reg[1] cannot be properly analyzed as its control pin num2_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch num2_reg[2] cannot be properly analyzed as its control pin num2_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch num2_reg[3] cannot be properly analyzed as its control pin num2_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch num3_reg[0] cannot be properly analyzed as its control pin num3_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch num3_reg[1] cannot be properly analyzed as its control pin num3_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch num3_reg[2] cannot be properly analyzed as its control pin num3_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch num3_reg[3] cannot be properly analyzed as its control pin num3_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch num4_reg[0] cannot be properly analyzed as its control pin num4_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch num4_reg[1] cannot be properly analyzed as its control pin num4_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch num4_reg[2] cannot be properly analyzed as its control pin num4_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch num4_reg[3] cannot be properly analyzed as its control pin num4_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch num5_reg[0] cannot be properly analyzed as its control pin num5_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch num5_reg[1] cannot be properly analyzed as its control pin num5_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch num5_reg[2] cannot be properly analyzed as its control pin num5_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch num5_reg[3] cannot be properly analyzed as its control pin num5_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch num6_reg[0] cannot be properly analyzed as its control pin num6_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch num6_reg[1] cannot be properly analyzed as its control pin num6_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch num6_reg[2] cannot be properly analyzed as its control pin num6_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch num6_reg[3] cannot be properly analyzed as its control pin num6_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch num7_reg[0] cannot be properly analyzed as its control pin num7_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch num7_reg[1] cannot be properly analyzed as its control pin num7_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch num7_reg[2] cannot be properly analyzed as its control pin num7_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch num7_reg[3] cannot be properly analyzed as its control pin num7_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock ip_clock/inst/clk_in1 is created on an inappropriate internal pin ip_clock/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+

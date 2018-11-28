@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov 28 12:46:12 2018
+# Process ID: 5651
+# Current directory: /home/vmware/adc_lab/new_demo/new_demo.runs/impl_1
+# Command line: vivado -log new_demo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source new_demo.tcl -notrace
+# Log file: /home/vmware/adc_lab/new_demo/new_demo.runs/impl_1/new_demo.vdi
+# Journal file: /home/vmware/adc_lab/new_demo/new_demo.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source new_demo.tcl -notrace

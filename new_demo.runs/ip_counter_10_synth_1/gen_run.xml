@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ip_counter_10_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1542367772">
+  <File Type="RDS-UTIL" Name="ip_counter_10_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ip_counter_10_utilization_synth.pb"/>
+  <File Type="RDS-RDS" Name="ip_counter_10.vds"/>
+  <File Type="RDS-DCP" Name="ip_counter_10.dcp"/>
+  <File Type="PA-TCL" Name="ip_counter_10.tcl"/>
+  <File Type="REPORTS-TCL" Name="ip_counter_10_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ip_counter_10">
+    <File Path="$PSRCDIR/sources_1/ip/ip_counter_10/ip_counter_10.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab9_3_1/lab9_3_1.srcs/sources_1/ip/ip_counter_10/ip_counter_10.xci"/>
+        <Attr Name="ImportTime" Val="1542367770"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ip_counter_10"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ip_counter_10">
+    <File Path="$PSRCDIR/sources_1/ip/ip_counter_10/ip_counter_10.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab9_3_1/lab9_3_1.srcs/sources_1/ip/ip_counter_10/ip_counter_10.xci"/>
+        <Attr Name="ImportTime" Val="1542367770"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ip_counter_10"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

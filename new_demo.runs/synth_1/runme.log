@@ -1,0 +1,432 @@
+
+*** Running vivado
+    with args -log new_demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source new_demo.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source new_demo.tcl -notrace
+Command: synth_design -top new_demo -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5540 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1274.770 ; gain = 82.922 ; free physical = 1770 ; free virtual = 5155
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'new_demo' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:82]
+INFO: [Synth 8-6157] synthesizing module 'clk_5MHz' [/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/.Xil/Vivado-5527-VMware/realtime/clk_5MHz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_5MHz' (1#1) [/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/.Xil/Vivado-5527-VMware/realtime/clk_5MHz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ip_counter_10' [/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/.Xil/Vivado-5527-VMware/realtime/ip_counter_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ip_counter_10' (3#1) [/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/.Xil/Vivado-5527-VMware/realtime/ip_counter_10_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ip_counter_6' [/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/.Xil/Vivado-5527-VMware/realtime/ip_counter_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ip_counter_6' (4#1) [/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/.Xil/Vivado-5527-VMware/realtime/ip_counter_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ip_counter_24' [/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/.Xil/Vivado-5527-VMware/realtime/ip_counter_24_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ip_counter_24' (5#1) [/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/.Xil/Vivado-5527-VMware/realtime/ip_counter_24_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'led_animator' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:55]
+INFO: [Synth 8-6157] synthesizing module 'ranger' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 1 - type: integer 
+	Parameter higher bound to: 21 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized0' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 6 - type: integer 
+	Parameter higher bound to: 26 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized0' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized1' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 11 - type: integer 
+	Parameter higher bound to: 31 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized1' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized2' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 16 - type: integer 
+	Parameter higher bound to: 36 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized2' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized3' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 21 - type: integer 
+	Parameter higher bound to: 41 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized3' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized4' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 26 - type: integer 
+	Parameter higher bound to: 46 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized4' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized5' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 31 - type: integer 
+	Parameter higher bound to: 51 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized5' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized6' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 36 - type: integer 
+	Parameter higher bound to: 56 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized6' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized7' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 41 - type: integer 
+	Parameter higher bound to: 61 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized7' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized8' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 46 - type: integer 
+	Parameter higher bound to: 66 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized8' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized9' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 51 - type: integer 
+	Parameter higher bound to: 71 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized9' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized10' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 56 - type: integer 
+	Parameter higher bound to: 76 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized10' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized11' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 61 - type: integer 
+	Parameter higher bound to: 81 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized11' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized12' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 66 - type: integer 
+	Parameter higher bound to: 86 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized12' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized13' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 71 - type: integer 
+	Parameter higher bound to: 91 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized13' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ranger__parameterized14' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+	Parameter lower bound to: 76 - type: integer 
+	Parameter higher bound to: 96 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ranger__parameterized14' (6#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'led_animator' (7#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:55]
+INFO: [Synth 8-6157] synthesizing module 'seg_manager' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/seg_manager.v:29]
+INFO: [Synth 8-6157] synthesizing module 'bcd_to_7_seg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/seg_manager.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_to_7_seg' (8#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/seg_manager.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'seg_manager' (9#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/seg_manager.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'new_demo' (10#1) [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.395 ; gain = 127.547 ; free physical = 1784 ; free virtual = 5171
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.395 ; gain = 127.547 ; free physical = 1784 ; free virtual = 5172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.395 ; gain = 127.547 ; free physical = 1784 ; free virtual = 5172
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_10/ip_counter_10/ip_counter_10_in_context.xdc] for cell 'n0'
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_10/ip_counter_10/ip_counter_10_in_context.xdc] for cell 'n0'
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_10/ip_counter_10/ip_counter_10_in_context.xdc] for cell 'n1'
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_10/ip_counter_10/ip_counter_10_in_context.xdc] for cell 'n1'
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_10/ip_counter_10/ip_counter_10_in_context.xdc] for cell 'n2'
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_10/ip_counter_10/ip_counter_10_in_context.xdc] for cell 'n2'
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_10/ip_counter_10/ip_counter_10_in_context.xdc] for cell 'n4'
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_10/ip_counter_10/ip_counter_10_in_context.xdc] for cell 'n4'
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_6/ip_counter_6/ip_counter_6_in_context.xdc] for cell 'n3'
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_6/ip_counter_6/ip_counter_6_in_context.xdc] for cell 'n3'
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_6/ip_counter_6/ip_counter_6_in_context.xdc] for cell 'n5'
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_6/ip_counter_6/ip_counter_6_in_context.xdc] for cell 'n5'
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc] for cell 'ip_clock'
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc] for cell 'ip_clock'
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_24/ip_counter_24/ip_counter_24_in_context.xdc] for cell 'n6'
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/ip_counter_24/ip_counter_24/ip_counter_24_in_context.xdc] for cell 'n6'
+Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/constrs_1/imports/adc_lab/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [/home/vmware/adc_lab/new_demo/new_demo.srcs/constrs_1/imports/adc_lab/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/vmware/adc_lab/new_demo/new_demo.srcs/constrs_1/imports/adc_lab/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/new_demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/new_demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1678.199 ; gain = 0.000 ; free physical = 1482 ; free virtual = 4906
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:32 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1559 ; free virtual = 4983
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:32 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1559 ; free virtual = 4983
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for n0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for n1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for n2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for n4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for n3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for n5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ip_clock. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for n6. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:32 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1561 ; free virtual = 4985
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'num0_reg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'num1_reg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'num2_reg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'num3_reg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'num4_reg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'num5_reg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'num6_reg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'num7_reg' [/home/vmware/adc_lab/new_demo/new_demo.srcs/sources_1/new/new_demo.v:117]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1552 ; free virtual = 4976
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module seg_manager 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1535 ; free virtual = 4963
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ip_clock/clk_out1' to pin 'ip_clock/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:47 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1404 ; free virtual = 4840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:47 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1403 ; free virtual = 4839
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:47 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1402 ; free virtual = 4838
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1402 ; free virtual = 4838
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1402 ; free virtual = 4838
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1402 ; free virtual = 4838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1402 ; free virtual = 4838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1402 ; free virtual = 4838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1402 ; free virtual = 4838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_5MHz      |         1|
+|2     |ip_counter_10 |         4|
+|3     |ip_counter_6  |         2|
+|4     |ip_counter_24 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |clk_5MHz         |     1|
+|2     |ip_counter_10    |     1|
+|3     |ip_counter_10__1 |     1|
+|4     |ip_counter_10__2 |     1|
+|5     |ip_counter_10__3 |     1|
+|6     |ip_counter_24    |     1|
+|7     |ip_counter_6     |     1|
+|8     |ip_counter_6__1  |     1|
+|9     |BUFG             |     2|
+|10    |CARRY4           |    40|
+|11    |LUT1             |     3|
+|12    |LUT2             |    64|
+|13    |LUT3             |    20|
+|14    |LUT4             |     9|
+|15    |LUT5             |    31|
+|16    |LUT6             |    28|
+|17    |FDRE             |    68|
+|18    |LD               |    32|
+|19    |IBUF             |     5|
+|20    |OBUF             |    32|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   374|
+|2     |  clock  |clock_divider |    87|
+|3     |  seg    |seg_manager   |   125|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1402 ; free virtual = 4838
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1678.199 ; gain = 127.547 ; free physical = 1456 ; free virtual = 4892
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1678.199 ; gain = 486.352 ; free physical = 1456 ; free virtual = 4892
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE (inverted pins: G): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:49 . Memory (MB): peak = 1678.199 ; gain = 486.430 ; free physical = 1451 ; free virtual = 4887
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/vmware/adc_lab/new_demo/new_demo.runs/synth_1/new_demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file new_demo_utilization_synth.rpt -pb new_demo_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1702.211 ; gain = 0.000 ; free physical = 1451 ; free virtual = 4887
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 28 12:46:11 2018...

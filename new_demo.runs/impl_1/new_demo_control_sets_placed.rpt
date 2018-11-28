@@ -1,0 +1,80 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Wed Nov 28 12:47:18 2018
+| Host         : VMware running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_control_sets -verbose -file new_demo_control_sets_placed.rpt
+| Design       : new_demo
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      6 |            1 |
+|      8 |            6 |
+|     12 |            1 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              84 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             112 |           14 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------+------------------------------------------------------------+------------------+----------------+
+|       Clock Signal      | Enable Signal |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++-------------------------+---------------+------------------------------------------------------------+------------------+----------------+
+|  selected_5MHZ_BUFG     |               |                                                            |                1 |              2 |
+|  ip_clock/inst/clk_out1 |               |                                                            |                2 |              6 |
+|  clock/CLK_BUFG         | CE02_out      | n5/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              8 |
+|  clock/CLK_BUFG         | CE04_out      | n4/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              8 |
+|  clock/CLK_BUFG         | CE06_out      | n3/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              8 |
+|  clock/CLK_BUFG         | CE08_out      | n2/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              8 |
+|  clock/CLK_BUFG         | CE09_out      | n1/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              8 |
+|  clock/CLK_BUFG         | Enable_IBUF   | n0/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              8 |
+|  clock/CLK_BUFG         |               |                                                            |                6 |             12 |
+| ~Hold_IBUF_BUFG         |               |                                                            |               12 |             64 |
+|  selected_5MHZ_BUFG     | Enable_IBUF   | clock/n[0]_i_1_n_0                                         |                8 |             64 |
+|  ip_clock/inst/clk_out1 |               | seg/clear                                                  |                8 |             64 |
++-------------------------+---------------+------------------------------------------------------------+------------------+----------------+
+
+

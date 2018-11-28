@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov 16 19:41:13 2018
+# Process ID: 91922
+# Current directory: /home/vmware/adc_lab/lab9_3_1/lab9_3_1.runs/clk_5MHz_synth_1
+# Command line: vivado -log clk_5MHz.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_5MHz.tcl
+# Log file: /home/vmware/adc_lab/lab9_3_1/lab9_3_1.runs/clk_5MHz_synth_1/clk_5MHz.vds
+# Journal file: /home/vmware/adc_lab/lab9_3_1/lab9_3_1.runs/clk_5MHz_synth_1/vivado.jou
+#-----------------------------------------------------------
+source clk_5MHz.tcl -notrace

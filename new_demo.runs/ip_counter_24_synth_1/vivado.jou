@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov 17 21:18:14 2018
+# Process ID: 3468
+# Current directory: /home/vmware/adc_lab/lab9_3_1/lab9_3_1.runs/ip_counter_24_synth_1
+# Command line: vivado -log ip_counter_24.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip_counter_24.tcl
+# Log file: /home/vmware/adc_lab/lab9_3_1/lab9_3_1.runs/ip_counter_24_synth_1/ip_counter_24.vds
+# Journal file: /home/vmware/adc_lab/lab9_3_1/lab9_3_1.runs/ip_counter_24_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ip_counter_24.tcl -notrace
